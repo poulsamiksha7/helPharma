@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="icon" href="img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\login.css">
+   
+</head>
+<body >
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="logo" height="100px" width="100px">
+        </a>
+        <nav class="headbar">
+            <a href="index.html">Home</a>
+         
+            <a href="login.html" class="login-btn" id="login-btn">Login</a>
+        
+            <a href="doc.html">Doctor</a>
+            <a href="med.html">Medicine</a>
+            <a href="service.html">Service</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="menubtn">
+            <button>Helpline</button>
+        </div>
+    </header>
+    <div class="main">
+        
+        <input type="checkbox" id="chk" aria-hidden="true">
+        <div class="signup">
+            <form action="login.php" method="post" >
+
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="text" name="name" placeholder="User name" id="name" required="">
+                <input type="email" name="email" placeholder="Email" id="email" required="">
+                <input type="password" name="password" placeholder="Password" id="password" required="">
+                
+                <button>Sign Up</button>
+            
+            </form>
+        </div>
+    
+        <div class="login">
+            <form action="signup.php" method="post">
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="password" placeholder="Password" required="">
+                <div class="forgot-pass">
+                    <a href="forgotpassword.html" aria-hidden="true">Forgot Password?</a>
+                </div>
+                <button>Login</button>
+            </form>
+        </div>
+        <div class="text-center">
+            <!-- Button HTML (to Trigger Modal) -->
+            <a href="#myModal" class="trigger-btn" data-toggle="modal">Click to Open Confirm Modal</a>
+        </div>
+        
+
+    </div>
+
+</body>
+</html>

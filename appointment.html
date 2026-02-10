@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="icon" href="img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/appointment.css">
+
+    
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="logo" height="100px" width="100px"> 
+        </a>
+
+        <nav class="headbar">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="doc.html">Doctor</a>
+            <a href="med.html">Medicine</a>
+            <a href="service.html">Service</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="menubtn">
+            <button>Helpline</button>
+        </div>
+    </header>
+<div class="booking">
+   
+    <input type="checkbox" id="chk" aria-hidden="true">
+        <div class="appointment">
+            <form action="appointment.php" method="post" >
+                <label for="chk" aria-hidden="true">Book an Appointment</label>
+                <input type="text" name="name" placeholder="User name" required="">
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="password" placeholder="Password" required="">
+                <select name="doctor" id="doctor">
+                    <option value="">Choose A Doctor</option>
+                    <option value="1">Dermatologist</option>
+                    <option value="2">Dentist</option>
+                    <option value="3">Cardiology</option>
+                    <option value="4">Neurologist</option>
+                    <option value="5">Orthopedic</option>
+                    <option value="6">Nephrlogist</option>
+                    <option value="7">Physician</option>
+                    <option value="8">Psychatrist</option>
+                    <option value="9">Dietician</option>
+                </select>
+                
+                
+                <button>Submit</button>
+            
+            </form>
+        </div>
+    </div>
+    </body>
+    </html>
